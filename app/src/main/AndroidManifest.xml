@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyNiceStart">
+        <activity android:name=".MainActivity2" android:parentActivityName=".MainActivity" android:theme="@style/miEstilo"></activity>
         <activity android:name=".SplashScreem">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,10 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Log_In" ></activity>
-        <activity android:name=".Sign_up"></activity>
+        <activity android:name=".Log_In" />
+        <activity android:name=".Sign_up" />
         <activity android:name=".LogInActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity" android:theme="@style/miEstilo"></activity>
     </application>
 
 </manifest>

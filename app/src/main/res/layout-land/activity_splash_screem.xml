@@ -7,15 +7,15 @@
     tools:context=".SplashScreem">
 
     <ImageView
-        android:id="@+id/img_fondo"
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitXY"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-        <!--app:srcCompat="@drawable/fondo"-->
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/fondo" />
 
     <View
         android:layout_width="match_parent"

@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/girl" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/img_inicio"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="30dp"
@@ -35,7 +35,7 @@
         android:background="@android:color/white"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+        app:layout_constraintTop_toBottomOf="@+id/img_inicio">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_height="match_parent"
             android:layout_width="match_parent"
