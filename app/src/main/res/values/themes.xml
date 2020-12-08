@@ -1,5 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+    <!-- Este es el estilo que contiene el noActionBar el cual quita la barra de arriba en las interfaces que querramos
+     Destacar que es el estilo por defecto añadiendo el noActionbar-->
     <style name="Theme.MyNiceStart" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
@@ -13,7 +15,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-
+    <!-- Este es mi propio estilo con action bar y se lo pondremos a la Interfaces main-->
     <style name="miEstilo" parent="Theme.MaterialComponents.DayNight">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
@@ -26,5 +28,16 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <!-- Este estilo es para el boton sin borde-->
+    </style>
+    <style name="ButtonStraight" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/statelist</item>
+
+    </style>
+    <!-- Este estilo es para el boton con borde-->
+    <style name="ButtonOutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/color_atras</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="strokeColor">@color/colorAccent</item>
     </style>
 </resources>

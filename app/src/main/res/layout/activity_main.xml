@@ -6,16 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@color/teal_200">
-
+    <!--android:background="@drawable/button_custom"-->
     <Button
         android:id="@+id/btn_pasar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="281dp"
-        android:background="@drawable/button_custom"
         android:text="Button"
-        app:backgroundTint="@android:color/transparent"
-        app:backgroundTintMode="add"
+        style="@style/ButtonStraight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

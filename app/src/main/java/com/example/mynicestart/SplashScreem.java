@@ -28,16 +28,18 @@ ImageView img_fondo;
         setContentView(R.layout.activity_splash_screem);
         img = findViewById(R.id.img_inicio);
         img_fondo = findViewById(R.id.img_fondo);
+        //Animacion de rotate y la inicializamos y le decimos que lo haga en la imagen
         Animation myAnimation = AnimationUtils.loadAnimation(this,R.anim.rotate);
         img.startAnimation(myAnimation);
         openApp(true);
+        //Aqui estoy poniendo un fondo en el Splash
         Glide.with(this)
                 .load(R.drawable.fondo)
                 .transition(DrawableTransitionOptions.withCrossFade(500))
                 .placeholder(new ColorDrawable(this.getResources().getColor(R.color.design_default_color_background)))
                 .into(img_fondo);
     }
-
+    //Metodo para pasar del Splash al LogIn con retardo de 2 segundos
     private void openApp(boolean locationPermission) {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {

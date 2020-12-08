@@ -27,12 +27,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         btn = findViewById(R.id.btn_pasar);
         img_perfil = findViewById(R.id.img_perfil);
+        /*
+        Aqui pongo la imagen del muñecote en el main1 diciendole donde va
+        y que tenga forma de circulo con el circleCrop()
+         */
         Glide.with(this)
                 .load(R.drawable.eus)
                 .transition(DrawableTransitionOptions.withCrossFade(500))
                 .circleCrop()
                 .into(img_perfil);
         btn.setOnClickListener(new View.OnClickListener() {
+            /*
+            Este es el metodo que al pulsar el boton del main vaya del main1 al main2
+             */
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity

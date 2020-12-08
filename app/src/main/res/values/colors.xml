@@ -10,5 +10,6 @@
     <color name="colorAccent">#FF7400</color>
     <color name="color_btn">#914B9E</color>
     <color name="celda_reg">#FEAEFF</color>
+    <color name="color_atras">#FD46FF</color>
 
 </resources>
