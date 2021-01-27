@@ -2,21 +2,44 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/teal_200">
+    android:background="@color/teal_201"
+    tools:context=".MainActivity">
     <!--android:background="@drawable/button_custom"-->
+
     <Button
         android:id="@+id/btn_pasar"
+        style="@style/ButtonStraight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="281dp"
         android:text="Button"
-        style="@style/ButtonStraight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/myswipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/taporswipetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="swipe to refresh"
+            android:textColor="@color/color_btn"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <ImageView
         android:id="@+id/img_perfil"
@@ -26,5 +49,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/celda_reg"
+        app:animationDuration="300"
+        app:expandOnClick="true"
+        app:inner_view="@layout/expandible_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startExpanded="false"
+        app:title="Passengers" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
