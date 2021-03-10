@@ -19,7 +19,7 @@
             android:layout_width="200dp"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/logo_bueno" />
+            android:src="@drawable/logo_bueno" />
 
         <LinearLayout
             android:layout_width="match_parent"

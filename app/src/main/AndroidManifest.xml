@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mynicestart">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
@@ -9,7 +11,14 @@
         android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyNiceStart">
-        <activity android:name=".MainActivity2" android:parentActivityName=".MainActivity" android:theme="@style/miEstilo"></activity>
+        <activity
+            android:name=".MainActivity3"
+            android:parentActivityName=".MainActivity2"
+            android:theme="@style/miEstilo"></activity>
+        <activity
+            android:name=".MainActivity2"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/miEstilo" />
         <activity android:name=".SplashScreem">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +29,9 @@
         <activity android:name=".Log_In" />
         <activity android:name=".Sign_up" />
         <activity android:name=".LogInActivity" />
-        <activity android:name=".MainActivity" android:theme="@style/miEstilo"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/miEstilo" />
     </application>
 
 </manifest>
