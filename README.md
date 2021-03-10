@@ -2,7 +2,7 @@
 Esta aplcacion es de "ligoteo" para verla:
 [GitHub My Nice Start](https://github.com/Alvaro230/MyNiceStart)
 
-Aqui abajo podeis ver las seis interfaces que tiene la aplicación:
+Aqui abajo podeis ver las seis interfaces que tiene la aplicación:<br>
 En el main1 encontrareis(AppBar,Menú Contextual,Alert Dialog,SwipeRefreshLayout con SnackBar,Expandable Cardview)<br>
 En el main2 encontrareis(Menú BottomBar (o BottomNavigation))<br>
 En el main3 encontrareis(DialogFlow)
